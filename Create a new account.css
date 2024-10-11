@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.h {
+    text-align: center;
+}
+
+p {
+    margin-top: -20px;
+}
+
+.logo-img {
+    border-radius: 100%;
+}
+
+.logo-img:hover {
+    height: 600px;
+    width: 600px;
+    transform: rotate(360deg);
+}
+
+.logo-img {
+    width: 200px;
+    padding: 30px;
+    margin: 2.5%;
+    margin-inline-start: 3%;
+    box-shadow: 10px 10px 10px 10px red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 650px;
+    position: sticky;
+}
+
+.Forgotten-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 22.5%;
+    padding: 15px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.text-input {
+    margin-bottom: 15px;
+}
+
+.text-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-input input {
+    width: 100%; /* Adjusted for responsiveness */
+    padding: 10px;
+    border: 1px solid #020000;
+    border-radius: 4px;
+}
+
+.text-box {
+    width: 70%;
+    padding: 15px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.text-box {
+    margin-bottom: 15px;
+}
+
+.text-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-box input {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #020000;
+    border-radius: 4px;
+}
+
+.Date {
+    padding: 15px;
+    margin: 1px;
+}
+
+.date-box {
+    width: 30%;
+    padding: 15px;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 16px;
+    position: sticky;
+}
+
+.Gander {
+    padding: 20px;
+    margin: 8px;
+}
+
+.Gander-box {
+    border: 1px solid rgb(79, 77, 77);
+    border-radius: 3px;
+    width: 30%;
+    padding-left: 57.60px;
+    padding-right: 57.60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 8px;
+    font-size: 16px;
+    position: sticky;
+    text-align: center;
+}
+
+.verify-box {
+    width: 100%;
+    padding: 15px;
+    margin: -4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.verify-box {
+    margin-bottom: 15px;
+}
+
+.verify-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.p-1 {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #a8a4a4;
+}
+
+.button-1 {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2d12e1;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.button-1:hover {
+    background-color: #6748ef;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px) { /* Phones */
+   
+    .container {
+        margin-top: 50%;
+        width: 70%;
+        height: auto; /* Allow height to adjust */
+    }
+    .text-input{
+        width: 25%;
+        text-align: center;
+    }
+    .text-box{
+        width: 65%;
+    }
+    .Gander{
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    
+    .Gander-box {
+        width: 100%; /* Full width on small screens */
+    }
+    .logo-img {
+        margin-top: 50%;
+        width: 150px; /* Smaller logo on phones */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+    .container {
+        width: 80%;
+    }
+    .text-input,
+    .text-box,
+    .Gander-box {
+        width: 45%; /* Adjust for tablets */
+    }
+    .logo-img {
+        width: 180px; /* Adjust logo size for tablets */
+    }
+}
+
+@media (min-width: 1025px) { /* Desktops */
+    .container {
+        width: 700px;
+        height: 650px; /* Maintain original size */
+    }
+    .text-input{
+        align-items: center;
+        text-align: center;
+        width: auto%;
+    }
+    
+    .text-box{
+        width: 70%;
+    }
+    .Gander-box {
+        width: 22.5%; /* Maintain original size */
+    }
+    .logo-img {
+        width: 200px; /* Maintain original size */
+    }
+}

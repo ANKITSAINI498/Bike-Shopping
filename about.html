@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <style>
+        
+        .h {
+            color: yellow;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        
+        .h-1 {
+            margin-top: 30px;
+            color: tomato;
+            margin-left: 20px;
+        }
+        
+        p {
+            margin-top: -15px;
+            color: white;
+            font-size: 20px;
+            text-align: justify;
+        }
+        
+        footer {
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d12e1;
+            border: double;
+        }
+    
+        li {
+            float: left;
+            border-right: 1px solid #210768;
+            cursor: pointer;
+            overflow: hidden;
+        }
+    
+        li:last-child {
+            border-right: none;
+        }
+    
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+        li a:hover {
+            background-color: #111;
+            color: yellow;
+        }
+    
+        .active {
+            background-color: #5c22efe2;
+        }
+    
+        .active a:hover {
+            background-color: #5b55fb;
+        }
+    
+        /* Media Queries */
+    
+        /* Phones */
+        @media only screen and (max-width: 600px) {
+            body{
+                background-size: cover;
+            }
+            .h {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+    
+            .h-1 {
+                font-size: 25px;
+                margin-left: 10px;
+            }
+    
+            p {
+                font-size: 20px;
+            }
+    
+            ul {
+                padding: 0;
+            }
+    
+            li {
+                float:left;
+                text-align: center;
+                width: 24%;
+            }
+        }
+    
+        /* Tablets */
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            .h {
+                font-size: 20px;
+                margin-left: 15px;
+            }
+    
+            .h-1 {
+                font-size: 18px;
+                margin-left: 15px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            li {
+                float: left;
+                width: 50%;
+            }
+        }
+    
+        /* Desktops */
+        @media only screen and (min-width: 901px) {
+            .h {
+                font-size: 24px;
+                margin-left: 20px;
+            }
+    
+            .h-1 {
+                font-size: 22px;
+                margin-left: 20px;
+            }
+    
+            p {
+                font-size: 20px;
+            }
+    
+            li {
+                float: left;
+                width: auto;
+            }
+        }
+    </style>    
+</head>
+
+<body background="./About.jpg">
+    <footer>
+        <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="https://www.carandbike.com/upcoming-bikes">News</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li style="float:right"><a href="./login.html">Log in</a></li>
+
+        </ul>
+    </footer>
+    <h1 class="h">About Us</h1>
+    <P class="p">
+        Bike Shopping is India's largest auto media for the bike & car community over the last 24 years. It has its presence
+        across print, web, television & events. The brand has made it its mission to make life easier for its readers by
+        testing vehicles and enabling them to make the right choice when it comes to choosing automobiles. Targeted at
+        auto enthusiasts, Bike Shopping strives to achieve excellence by keeping its reader abreast of every development
+        that occurs in the ever-evolving automobile market. Not only do you get in-depth reviews of the hottest wheels,
+        but also helpful tips, step-by-step guides and expert advice. With its highly interactive mediums spread out
+        over various platforms, Bike Shopping makes sure that the young and passionate enthusiasts are hooked onto the
+        brand.
+    </P>
+    <h3 class="h-1">Bike Shopping Awards</h3>
+    <p class="p">Instituted in 2000 to recognise the best in the automotive industry, today the Bike Shopping awards are the most
+        prestigious awards and the only one held in association with all the apex industry bodies (CII, SIAM and ACMA).
+        It is judged by an independent jury and validated by a reputed audit firm.</p>
+
+    <h3 class="h-1">Bike Shopping on TV</h3>
+    <p class="p">Bike Shopping is now on CNBC TV18. The latest automobiles in the market are generally tested and reviewed in this
+        show, followed by a section, which answers viewer queries by auto-experts from Bike Shopping. The show also has
+        leading personalities from the auto industry, celebrities and key people from various walks of life talk about
+        cars in a very personal way. Watched by millions every month, this is the biggest automobile show in the
+        country.</p>
+</body>
+
+</html>

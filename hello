@@ -1,0 +1,167 @@
+
+
+
+
+<footer class="footer">
+            <div class="container-footer">
+                <div class="footer-left">
+                    <a href="#">
+                        <section class="od-logo"><img
+                                src="https://stat.overdrive.in/wp-content/uploads/revamp/images/logo.png" width="107"
+                                height="24" alt="Bike Shopinglogo"></section>
+                    </a>
+                    <p class="text-p">India’s largest auto media for the bike &amp; car community for over 22
+                        years.</p>
+                    <div class="newsletterbox"></div>
+                    <span>Subscribe to Bike Shoping Newsletter</span>
+
+                    <div class="subscribe-container">
+                        <form action="" class="od-flex justify-content">
+                            <input placeholder="Enter Email ID" id="femail" name="femail" type="email">
+                            <input type="button" class="go-search" value="go" onclick="subscribenow('femail')">
+
+                        </form>
+                    </div>
+                    <div class="err1" id="efemail" style="display:none;color:red;"></div>
+                </div>
+
+            </div>
+    </div>
+    <div class="footer-right">
+
+        <div class="popularbarndfooter " style="color:#FFF:">
+            <div style="color:#FFF;padding:5px;" class="div"><strong>POPULAR CAR BRANDS:</strong>
+                <a href="#">Maruti Suzuki</a> |
+                <a href="#">Hyundai</a> |
+                <a href="#">Honda</a> |
+                <a href="#">Mahindra</a> |
+                <a href="#">Kia</a> |
+                <a href="#">MG</a> |
+                <a href="#">Mercedes-Benz</a> |
+                <a href="#">BMW</a> |
+                <a href="#">Audi</a>
+                &ZeroWidthSpace;<a href="#">Toyota</a> |
+                <a href="#">Renault</a> |
+                <a href="#">Nissan</a>
+            </div>
+
+            <div style="color:#FFF;padding:5px;" class="div"><strong>POPULAR BIKE BRANDS:</strong>
+                <a href="#">Royal Enfield</a> |
+                <a href="#">Hero</a> |
+                <a href="#">Honda</a> |
+                <a href="#">TVS</a> |
+                <a href="#">Suzuki</a> |
+                <a href="#">Yamaha</a> |
+                <a href="#">Bajaj</a> |
+                <a href="#">KTM</a> |
+                <a href="#">Harley-Davidson</a> |
+                <a href="#">Kawasaki</a> |
+                <a href="#">Ducati</a> |
+                <a href="#">Triumph</a>
+            </div> &ZeroWidthSpace;
+
+        </div>
+        <div style="clear:both;"></div>
+        <ul class="footeLinks od-flex">
+
+            <li>
+                <a href="#"> <span class="push10">NEWS</span></a>
+                <a href="#"><b>REVIEWS</b></a>
+                <a href="#"><b>FEATURES</b></a>
+                <a href="#"><b>OPINIONS</b></a>
+                <a href="#"><b>PHOTOS</b></a>
+                <a href="#"><b>VIDEOS</b></a>
+                <a href="#"><b>COMPARE</b></a>
+                <a href="#"><b>EVENTS</b></a>
+
+            </li>
+            <li class="hide-mobile"> <span class="push10"><a href="#">Cars</a></span>
+                <a href="#">Compare Cars</a>
+                <a href="#">Car Reviews</a>
+                <a href="#">Car Photos</a>
+                <a href="#">Car Videos</a>
+                <a href="#">Just Launched Cars</a>
+                <a href="#">Upcoming Cars</a>
+                <a href="#">Popular Cars</a>
+
+            </li>
+            <li class="hide-mobile"><span class="push10"><a href="#">Bikes</a></span>
+                <a href="#">Compare Bikes</a>
+                <a href="#">Bike Reviews</a>
+                <a href="#">Bike Photos</a>
+                <a href="#">Bike Videos</a>
+                <a href="#">Just Launched Bikes</a>
+                <a href="#">Upcoming Bikes</a>
+                <a href="#">Popular Bikes</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Subscribe</a>
+                <a href="#">Overdrive App</a>
+                <a href="#"> Newsletter</a>
+                <a href="#">Press Releases</a>
+            </li>
+            <li class="no-brd"><span class="push10">Follow Us</span>
+                <a href="#" rel="noopener" target="_blank">Facebook</a>
+                <a href="#" rel="noopener" target="_blank">Twitter</a>
+                <a href="#" rel="noopener" target="_blank">Youtube</a>
+                <a href="#" rel="noopener" target="_blank">Instagram</a>
+            </li>
+            <li class="hide-mobile"><span class="push10">Network 18 Sites</span>
+
+                <a href="#" rel="noopener" style="color: #999;" target="_blank">BETTER PHOTOGRAPHY</a>
+                <a href="#" rel="noopener" style="color: #999;" target="_blank">BETTER INTERIORS</a>
+                <a href="#" rel="noopener" style="color: #999;" target="_blank">MONEYCONTROL</a>
+                <a href="#" rel="noopener" style="color: #999;" target="_blank">FIRSTPOST</a>
+                <a href="#" rel="noopener" style="color: #999;" target="_blank">NEWS18</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    </div>
+    </div>
+    </footer>
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f58b8b;
+      }
+      
+      li {
+        float: left;
+        border-right:1px solid #210768;
+      }
+      
+      li:last-child {
+        border-right: none;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover{
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #5c22efe2;
+      }
+      .active a:hover{
+        background-color: #5b55fb;
+      }

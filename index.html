@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./mystyle.css">
+    <title>Bike Shoping</title>
+
+</head>
+
+<body background="./bikebg.jpg">
+    <footer>
+        <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="https://www.carandbike.com/upcoming-bikes">News</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li style="float:right"><a href="./login.html">Log in</a></li>
+
+        </ul>
+    </footer>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img class="photo" src="./img1.jpeg">
+        </div>
+        <div class="mySlides fade">
+            <img class="photo" src="./img2.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img class="photo" src="./img8.avif">
+        </div>
+        <div class="mySlides fade">
+            <img class="photo" src="./img7.avif">
+        </div>
+        <div class="mySlides fade">
+            <img class="photo" src="./img5.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img class="photo" src="./img6.jpg">
+        </div>
+    </div>
+    <br>
+    
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <ul class="other-bar">
+
+        <a href="./about.html">
+            <li class="other-list">About Us</li>
+        </a>
+        <a href="./Coming Soon.html"></a>
+        <li class="other-list">OurProducts</li></a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">Our Service</li>
+        </a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">Investors</li>
+        </a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">SUSTAINABILITY</li>
+        </a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">Media</li>
+        </a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">International</li>
+        </a>
+        <a href="./Coming Soon.html">
+            <li class="other-list">Shop</li>
+        </a>
+    </ul>
+
+    <div class="container">
+        <div class="card">
+            <img class="card-img" src="./download1.jpeg" alt="">
+            <div class="card-header">
+                Honda CB300F 2022 DLX PRO
+                <div class="price">
+                    Bike Price ₹2,08,717
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-half"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./download2.jpeg" alt="">
+            <div class="card-header">
+                Yamaha R15S Bike
+                <div class="price">
+                    Bike Price ₹3,21,173
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download3.jpeg" alt="">
+            <div class="card-header">
+                KTM 390 Adventure
+                <div class="price">
+                    Bike Price ₹1,81,030
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download4.jpeg" alt="">
+            <div class="card-header">
+                Hero Splendor Plus
+                <div class="price">
+                    Bike Price ₹1,91,795
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download5.jpeg" alt="">
+            <div class="card-header">
+                Bajaj Pulsar RS200
+                <div class="price">
+                    Bike Price ₹3,41,877
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download6.jpeg" alt="">
+            <div class="card-header">
+                Hero Splendor Plus Black
+                <div class="price">
+                    Bike Price ₹8,63,945
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download7.jpeg" alt="">
+            <div class="card-header">
+                TVS Star City Plus 120cc
+                <div class="price">
+                    Bike Price ₹2,30,157
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download8.jpeg" alt="">
+            <div class="card-header">
+                Yamaha R15 Bike
+                <div class="price">
+                    Bike Price ₹5,60,000
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download9.jpeg" alt="">
+            <div class="card-header">
+                Royal Enfield Hunter 350
+                <div class="price">
+                    Bike Price ₹2,46,651
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download10.jpeg" alt="">
+            <div class="card-header">
+                BMW G 310 RR 2022 STD
+                <div class="price">
+                    Bike Price ₹1,98,950
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download11.jpeg" alt="">
+            <div class="card-header">
+                Yamaha YZF R1M Linex Sandton
+                <div class="price">
+                    Bike Price ₹1,75,900
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download12.jpeg" alt="">
+            <div class="card-header">
+                Hero MotoCorp Passion Plus
+                <div class="price">
+                    Bike Price ₹3,50,900
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download13.jpeg" alt="">
+            <div class="card-header">
+                Suzuki Red Bajaj Pulsar Bike
+                <div class="price">
+                    Bike Price ₹2,75,790
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download14.jpeg" alt="">
+            <div class="card-header">
+                Gigaglitz Petrol Multicolor 250Cc
+                <div class="price">
+                    Bike Price ₹5,25,430
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download15.jpeg" alt="">
+            <div class="card-header">
+                TVS Radeon 120cc
+                <div class="price">
+                    Bike Price ₹1,00,000
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./download16.jpg" alt="">
+            <div class="card-header">
+                Kawasaki Z650RS 2022 STD
+                <div class="price">
+                    Bike Price ₹7,75,900
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-half"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download17.jpg" alt="">
+            <div class="card-header">
+                Bajaj Dominar 400 2021 STD
+                <div class="price">
+                    Bike Price ₹3,30,400
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download18.jpg" alt="">
+            <div class="card-header">
+                Bajaj Dominar 400 2021 STD
+                <div class="price">
+                    Bike Price ₹7,85,460
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download19.jpg" alt="">
+            <div class="card-header">
+                Hero Xpulse 200 4V 2021 STD
+                <div class="price">
+                    Bike Price ₹6,50,370
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download20.jpg" alt="">
+            <div class="card-header">
+                Royal Enfield Classic 350 2021 Dark
+                <div class="price">
+                    Bike Price ₹2,63,956
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download21.jpg" alt="">
+            <div class="card-header">
+                Indian Chief Bobber Dark Horse 2021 STD
+                <div class="price">
+                    Bike Price ₹1,50,250
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download22.jpg" alt="">
+            <div class="card-header">
+                Honda CB200X 2021 STD
+                <div class="price">
+                    Bike Price ₹10,05,800
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download23.jpg" alt="">
+            <div class="card-header">
+                Honda Goldwing 2021 DCT Plus Airbag
+                <div class="price">
+                    Bike Price ₹1,45,390
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download24.jpg" alt="">
+            <div class="card-header">
+                BMW S 1000 R 2021 Pro M Sport
+                <div class="price">
+                    Bike Price ₹30,20,786
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./download25.jpg" alt="">
+            <div class="card-header">
+                Royal Enfield Himalayan 2021 STD
+                <div class="price">
+                    Bike Price ₹17,75,010
+                </div>
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <button class="button">
+                More Details
+            </button>
+        </div>
+        <div class="img-box">
+            <img src="./logo2.png" height="50px" width="250px">
+        </div>
+    </div>
+    <br>
+    <div class="end-manu">
+        <div class="row">
+            <div class="column">
+                <div class="h4">
+                    <h4>Bike Shopping</h4>
+                </div>
+                <p class="text">India’s largest auto media for the bike <br>&amp; car community for over 22years.</p>
+                <div class="newsletterbox"></div>
+                <span>Subscribe to Bike Shoping Newsletter</span>
+                <form action="" class="gmail">
+                    <input class="gmail-box" placeholder="Enter Email ID" id="femail" name="femail" type="email"
+                        required>
+                    <a href="./mail box.html" class="mail-box" required>Go</a>
+                </form>
+
+            </div>
+            <div class="column">
+                <div class="h2">
+                    <h4>NEWS</h4>
+                    <a href="./Coming Soon.html"><b>REVIEWS</b></a><br>
+                    <a href="./Coming Soon.html"><b>FEATURES</b></a><br>
+                    <a href="./Coming Soon.html"><b>OPINIONS</b></a><br>
+                    <a href="./Coming Soon.html"><b>PHOTOS</b></a><br>
+                    <a href="./Coming Soon.html"><b>VIDEOS</b></a><br>
+                    <a href="./Coming Soon.html"><b>COMPARE</b></a><br>
+                    <a href="./Coming Soon.html"><b>EVENTS</b></a><br>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="h4">
+                    <h4>CARS</h4>
+                    <a href="./Coming Soon.html">Compare Cars</a><br>
+                    <a href="./Coming Soon.html">Car Reviews</a><br>
+                    <a href="./Coming Soon.html">Car Photos</a><br>
+                    <a href="./Coming Soon.html">Car Videos</a><br>
+                    <a href="./Coming Soon.html">Just Launched Cars</a><br>
+                    <a href="./Coming Soon.html">Upcoming Cars</a><br>
+                    <a href="./Coming Soon.html">Popular Cars</a><br>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="h4">
+                    <h4>BIKES</h4>
+                    <a href="./Coming Soon.html">Compare Bikes</a><br>
+                    <a href="./Coming Soon.html">Bike Reviews</a><br>
+                    <a href="./Coming Soon.html">Bike Photos</a><br>
+                    <a href="./Coming Soon.html">Bike Videos</a><br>
+                    <a href="./Coming Soon.html">Just Launched Bikes</a><br>
+                    <a href="./Coming Soon.html">Upcoming Bikes</a><br>
+                    <a href="./Coming Soon.html">Popular Bikes</a><br>
+                </div>
+
+            </div>
+
+            <div class="column">
+                <div class="h4">
+                    <h4>About Us</h4>
+                    <a href="./Coming Soon.html">About Us</a><br>
+                    <a href="./Coming Soon.html">Contact Us</a><br>
+                    <a href="./Coming Soon.html">Privacy Policy</a><br>
+                    <a href="./Coming Soon.html">Terms and Conditions</a><br>
+                    <a href="./Coming Soon.html">Subscribe</a><br>
+                    <a href="./Coming Soon.html">Overdrive App</a><br>
+                    <a href="./Coming Soon.html"> Newsletter</a><br>
+                    <a href="./Coming Soon.html">Press Releases</a><br>
+                </div>
+
+            </div>
+
+            <div class="column">
+                <div class="h4">
+                    <h4>FOLLOW US</h4>
+                    <a href="./Coming Soon.html" rel="noopener" target="_blank">Facebook</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" target="_blank">Twitter</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" target="_blank">Youtube</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" target="_blank">Instagram</a><br>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="h4">
+                    <h4>NETWORK 18 SITES</h4>
+                    <a href="./Coming Soon.html" rel="noopener" style="color: white;" target="_blank">BETTER PHOTOGRAPHY</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" style="color: white;" target="_blank">BETTER INTERIORS</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" style="color: white;" target="_blank">MONEYCONTROL</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" style="color: white;" target="_blank">FIRSTPOST</a><br>
+                    <a href="./Coming Soon.html" rel="noopener" style="color: white;" target="_blank">NEWS18</a><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer-bar">
+        <center>
+            <p>Copyright © 2024 Overdrive - All rights reserved.</p>
+        </center>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

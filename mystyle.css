@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+footer {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a0793;
+    border: double;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #210768;
+    cursor: pointer;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: yellow;
+}
+
+.active {
+    background-color: #5c22efe2;
+}
+
+.active a:hover {
+    background-color: #5b55fb;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 10px;
+}
+.photo{
+    height:500px;
+    width:1400px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-img {
+    height: 250px;
+    width: 200px;
+}
+
+.card {
+    width: 200px;
+    padding: 30px;
+    margin: 2.5%;
+    margin-inline-start: 3%;
+    box-shadow: 10px 10px 10px 10px red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.card:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+
+.card-img {
+    width: 150px;
+    height: 100px;
+    border: black;
+    border: 20px;
+}
+
+.card-header {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.price {
+    color: cornflowerblue;
+    padding: 8px;
+}
+
+.card-body {
+    margin-top: 10px;
+    color: gold;
+    margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 100%;
+    padding: 5px;
+    background-color: goldenrod;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button {
+    background-color: rgb(246, 65, 110);
+    color: rgb(250, 248, 248);
+    border: 2px solid #04AA6D;
+}
+
+.button:hover {
+    background-color: #220676;
+    color: rgb(226, 247, 64);
+}
+
+.other-bar {
+    background-color: rgb(199, 246, 118);
+    height: auto;
+    border: solid black;
+    margin-top: 30px;
+    margin-inline-start: auto;
+    position: sticky;
+    top: 45px;
+}
+
+.other-list {
+    width: auto;
+    padding: 15px;
+    background-color: rgb(13, 6, 160);
+    color: rgb(251, 241, 89);
+    border: 2px solid #04AA6D;
+    display: inline;
+    margin: 10px;
+    margin-left: 46px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.other-list:hover {
+    background-color: #020202;
+    color: rgb(251, 241, 89);
+}
+
+hr {
+    width: auto;
+    height: auto;
+}
+
+.gmail-box {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gmail-button {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gmail-button:hover {
+    background-color: #45a049;
+}
+
+.img-box {
+    border: solid;
+    margin-top: 50px;
+    margin-left: 550px;
+}
+
+.column {
+    float: left;
+    width: auto;
+    padding: 15px;
+    border-left: solid white;
+    border-width: 4px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+    color: white;
+}
+
+.h4 {
+    display: inline;
+}
+
+.end-manu {
+    background-color: black;
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bar {
+    background-color: rgb(242, 73, 73);
+    background-size: cover;
+    width: 100%;
+    color: blanchedalmond;
+}
+
+.mail-box {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 13px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) { /* Phones */
+    ul{
+        display: block;
+    }
+    li{
+        width: 25%;
+    }
+    .photo {
+        height: 300px;  /* Adjust height for smaller screens */
+        width: 940px    /* Full width on small screens */
+    }
+    .slideshow-container{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        margin: 10px;
+    }
+    .other-bar{
+        width:100%;
+    
+        
+    }
+    .other-list{
+        margin-left: 6.50%;
+        margin-right: 6%;
+    }
+    .text {
+        font-size: 11px;
+    }
+    .card {
+        width: 25%; /* Full width on small screens */
+    }
+    .container {
+        flex-direction:row; /* Stack items */
+        align-items: center;
+
+    }
+    .button {
+        font-size: 16px;
+    }
+    .gmail-box {
+        width: 90%;
+    }
+    .img-box {
+        margin-left: 0; /* Centering */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) { /* Tablets */
+    .text {
+        font-size: 12px;
+    }
+    .card {
+        width: 45%; /* Responsive width for tablets */
+    }
+    .button {
+        font-size: 18px;
+    }
+}

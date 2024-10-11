@@ -1,0 +1,61 @@
+
+Copy code
+h1 {
+    color: white;
+    margin-top: 15%;
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+.p {
+    color: yellow;
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+/* Media Queries */
+@media (max-width: 767px) { /* Phones */
+    .body-1{
+        background-size:cover;
+    }
+    h1 {
+        color: white;
+        margin-left: 20px; /* Adjust margin for small screens */
+        font-size: 30px; /* Reduce font size */
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .p {
+        margin-top: 20px;
+        margin-left: 20px; /* Adjust margin for small screens */
+        font-size: 24px; /* Reduce font size */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+    h1 {
+        color: white;
+        margin-left: 50px; /* Adjust margin for tablets */
+        font-size: 40px; /* Reduce font size */
+    }
+
+    .p {
+        margin-left: 50px; /* Adjust margin for tablets */
+        font-size: 36px; /* Reduce font size */
+    }
+}
+
+@media (min-width: 1025px) { /* Desktops */
+    h1 {
+        color: white;
+        margin-left: 100px; /* Maintain original margin */
+        font-size: 50px; /* Maintain original font size */
+    }
+
+    .p {
+        margin-left: 100px; /* Maintain original margin */
+        font-size: 45px; /* Maintain original font size */
+    }
+}

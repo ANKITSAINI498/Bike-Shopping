@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Log in</title>
+    <link rel="stylesheet" href="./login.css">
+
+</head>
+
+<body>
+
+    <body background="./login.jpg">
+        <div class="container">
+            <div class="logo-img">
+                <center>
+                    <img src="./logo.png" height="250px" width="250px">
+                </center>
+            </div>
+            
+            <form class="login-form" id="loginForm" onsubmit="login(event)">
+                <h2>Login</h2>
+                <div class="form-group">
+                <b> <label for="username">Username</label></b>
+                <input type="text" id="userid" placeholder="User ID" required>
+                </div>
+                <div class="form-group">
+                <b><label for="password">Password</label></b>
+                <input type="password" id="password" placeholder="Password" required>
+                </div>
+                
+                <div class="button-box">
+                    <ul class="button"><center>
+                <button class="button-1" type="submit">Login</button>
+               </center>
+
+               <a href="./Forgotten Password.html">
+                <li class="button-2">Forgotten password ?</li></a><br>
+              <center>  <a href="./Create a new account.html">
+                    <li class="button-3">Create new account</li>
+                </a><br></center>
+                    </ul>
+                    </div>
+            </form>
+        </div>
+            <script>
+                function login(event) {
+                    event.preventDefault(); // Prevent the form from submitting
+            
+                    const userId = document.getElementById('userid').value;
+                    const password = document.getElementById('password').value;
+            
+                    if (userId && password) {
+                        alert("Thank you for logging in!");
+                        window.open("./index.html", "_blank"); // Open Google
+                    } 
+                }
+            </script>
+            
+            
+            
+            
+            
+       
+    
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.compose-container {
+    border-radius: 100%;
+}
+
+.compose-container:hover {
+    height: 600px;
+    width: 600px;
+    transform: rotate(360deg);
+}
+
+.compose-container {
+    width: auto;
+    padding: 30px;
+    margin-inline-start: 3%;
+    box-shadow: 10px 10px 10px 10px red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.compose-container {
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: yellow;
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 10px double #f5f5f8;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #f6f6fa;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.box-type {
+    padding: 10px;
+    border: 10px solid rgba(55, 45, 244, 0.2);
+    border-radius: 5px;
+    background-color: rgba(251, 249, 249, 0);
+    color: #f8fafc;
+    font-size: 16px;
+    outline: white;
+}
+
+.box-type:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.box-text {
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 767px) { /* Phones */
+    .compose-container {
+        margin-top: 30%;
+        width: 90%; /* Full width on small screens */
+        height: auto; /* Allow height to adjust */
+        padding: 15px; /* Adjust padding */
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: 100%; /* Full width input fields */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+    .compose-container {
+        width: 80%; /* Adjust width for tablets */
+        height: auto; /* Allow height to adjust */
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: 90%; /* Keep wider input fields */
+    }
+
+    button {
+        width: 100%; /* Full width button */
+    }
+}
+
+@media (min-width: 1025px) { /* Desktops */
+    .compose-container {
+        max-width: 500px; /* Maintain original size */
+        height: auto; /* Allow height to adjust */
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: 90%; /* Maintain width */
+    }
+
+    button {
+        width: 100%; /* Maintain width */
+    }
+}

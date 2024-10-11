@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 650px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-1 {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2d12e1;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+}
+
+.button-1:hover {
+    background-color: #6748ef;
+}
+
+.button-3 {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2d12e1;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Fixed border-radius */
+    cursor: pointer;
+    align-content: center;
+}
+
+.button-3:hover {
+    background-color: #6748ef;
+}
+
+.button-2:hover {
+    color: #f80707;
+}
+
+a {
+    text-decoration: none;
+}
+.button-1{
+    button(url)
+}
+
+/* Media Queries */
+@media (max-width: 767px) { /* Phones */
+    .container {
+        margin-top: 50%;
+        width: 70%;
+        height: auto; /* Allow height to adjust */
+    }
+
+    .button-1, .button-3 {
+        width: 60%; /* Wider buttons on small screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+    .container {
+        width: 70%;
+        height: auto; /* Allow height to adjust */
+    }
+
+    .button-1 {
+        width: 60%; /* Adjust button width for tablets */
+    }
+
+    .button-3 {
+        width: 90%; /* Adjust button width for tablets */
+    }
+}
+
+@media (min-width: 1025px) { /* Desktops */
+    .container {
+        width: 400px; /* Maintain original size */
+        height: 650px; /* Maintain original height */
+    }
+
+    .button-1 {
+        width: 50%; /* Maintain original size */
+    }
+
+    .button-3 {
+        width: 80%; /* Maintain original size */
+    }
+}

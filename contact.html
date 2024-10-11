@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .h {
+            color: white;
+            margin-top: 10%;
+            margin-left: 400px;
+            font-size: 60px;
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+            border: solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .h span {
+            position: relative;
+            display: inline-block;
+            color: #030207;
+            text-transform: uppercase;
+            animation: h 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+        }
+    
+        @keyframes h {
+            0%,
+            40%,
+            100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-20px);
+            }
+        }
+    
+        .p {
+            color: black;
+            margin-left: 800px;
+            font-size: 45px;
+            margin-top: -30px;
+        }
+    
+        .img {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+    
+        /* Media Queries */
+    
+        /* Phones */
+        @media only screen and (max-width: 600px) {
+            .h {
+                margin-top: 50%;
+                font-size: 50%%;
+                margin-left: 20px;
+                text-align: center;
+            }
+    
+            .p {
+                font-size: 20px;
+
+                margin-left: 0;
+                text-align: center;
+                margin-top: -10px;
+            }
+        }
+    
+        /* Tablets */
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            .h {
+                font-size: 40px;
+                margin-left: 50px;
+            }
+    
+            .p {
+                font-size: 35px;
+                margin-left: 0;
+                text-align: center;
+                margin-top: -10px;
+            }
+        }
+    
+        /* Desktops */
+        @media only screen and (min-width: 901px) {
+            .h {
+                font-size: 60px;
+                margin-left: 400px;
+            }
+    
+            .p {
+                font-size: 45px;
+                margin-left: 800px;
+            }
+        }
+    </style>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <body background="./contact.jpg">
+
+        <div class="h">
+            <span style="--i:1">Hi,</span>
+            <span style="--i:2">Thanks</span>
+            <span style="--i:3">For</span>
+            <span style="--i:4">Contact</span>
+            <span style="--i:5">!</span>
+        </div>
+
+
+
+        <img class="img" src="#" alt="">
+        <p class="p">Name : Ankit Saini</p>
+        <p class="p">Profession : Web Developer</p>
+        <P class="p">Mobile No. : 6376188144</P>
+        <p class="p">Email : sainikumarin@gmail.com</p>
+
+
+    </body>
+
+</html>
