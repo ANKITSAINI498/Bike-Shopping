@@ -299,53 +299,66 @@ a {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) { /* Phones */
-    ul{
+    ul {
         display: block;
+        padding: 0; /* Add padding reset */
+        margin: 0;  /* Add margin reset */
     }
-    li{
-        width: 25%;
-    }
-    .photo {
-        height: 300px;  /* Adjust height for smaller screens */
-        width: 940px    /* Full width on small screens */
-    }
-    .slideshow-container{
-        width: 50%;
-        height: 50%;
-        position: relative;
-        margin: 10px;
-    }
-    .other-bar{
-        width:100%;
     
-        
+    li {
+        width: 100%; /* Full width for better stacking */
+        box-sizing: border-box; /* Ensure padding and borders are included */
     }
-    .other-list{
-        margin-left: 6.50%;
-        margin-right: 6%;
-    }
-    .text {
-        font-size: 11px;
-    }
-    .card {
-        width: 25%; /* Full width on small screens */
-    }
-    .container {
-        flex-direction:row; /* Stack items */
-        align-items: center;
 
+    .photo {
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Full width on small screens */
     }
+
+    .slideshow-container {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+        position: relative;
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    .other-bar {
+        width: 100%;
+    }
+
+    .other-list {
+        margin: 0 6%; /* Simplified margin */
+    }
+
+    .text {
+        font-size: 12px; /* Slightly larger for readability */
+    }
+
+    .card {
+        width: 100%; /* Full width for cards */
+        margin-bottom: 10px; /* Spacing between cards */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items */
+        align-items: stretch; /* Stretch to full width */
+    }
+
     .button {
         font-size: 16px;
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Add padding for touch targets */
     }
+
     .gmail-box {
         width: 90%;
+        margin: 0 auto; /* Centering */
     }
+
     .img-box {
-        margin-left: 0; /* Centering */
+        margin: 0 auto; /* Centering */
     }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 1024px) { /* Tablets */
     .text {
         font-size: 12px;
